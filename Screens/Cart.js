@@ -1,8 +1,10 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import { Text } from "react-native-elements";
 import { StyleSheet, View } from "react-native";
+import {db} from "../config/firebase";
+import firebase from "firebase";
 
-const Cart = () => {
+const Cart = ({storeName, productImage, productPrice,productName}) => {
 
 
     return(

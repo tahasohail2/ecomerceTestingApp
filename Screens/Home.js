@@ -9,7 +9,7 @@ import {Text} from "react-native-elements"
 import { Icon } from 'react-native-elements'
 import FontAwesomeIcon from "react-native-vector-icons/FontAwesome";
 
-const Home = () => {
+const Home = (props) => {
  
   const [value, setValue] = useState(null);
 
@@ -32,7 +32,7 @@ const Home = () => {
   const [scanned, setScanned] = useState(false);
   
   const handleCart = () => {
-    
+    props.navigation.navigate('Cart')
   }
 
   useEffect(() => {
@@ -98,7 +98,7 @@ return(
            <TouchableOpacity onPress={handleCart} style={styles.button}>
            <View style={{flexDirection: "row", alignSelf:"center", alignItems:"stretch", justifyContent:"space-around" }}>
              
-               <Text style={{fontSize: 25, color: "purple" ,fontWeight: "bold"}}>add to cart</Text>
+               <Text style={{fontSize: 25, color: "purple" ,fontWeight: "bold"}}>view cart</Text>
                <FontAwesomeIcon
                 size={30}
                 color="purple"
