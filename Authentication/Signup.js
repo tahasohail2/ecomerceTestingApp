@@ -31,12 +31,8 @@ function SignUp(props) {
   return (
     <View style={styles.root}>
       <StatusBar barStyle="light-content" backgroundColor="rgba(0,0,0,0)" />
-      <View style={styles.background}>
-        <ImageBackground
-          style={styles.rect2}
-          imageStyle={styles.rect2_imageStyle}
-          source={require("../assets/Gradient_SwtgCDV.png")}
-        >
+      <View>
+        
           <View style={styles.progressBarColumn}>
             <View style={styles.progressBar}>
               <View style={styles.icon2Row}>
@@ -131,7 +127,7 @@ function SignUp(props) {
             </TouchableOpacity>
             <Text style={styles.text4}>Terms &amp; Conditions</Text>
           </View>
-        </ImageBackground>
+        
       </View>
     </View>
   );
@@ -140,7 +136,7 @@ function SignUp(props) {
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    backgroundColor: "rgb(255,255,255)"
+    backgroundColor: "black"
   },
   background: {
     flex: 1

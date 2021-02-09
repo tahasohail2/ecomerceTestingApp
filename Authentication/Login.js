@@ -60,17 +60,13 @@ function Login(props) {
   return (
     <View style={styles.root}>
       <StatusBar barStyle="light-content" backgroundColor="rgba(0,0,0,0)" />
-      <View style={styles.background}>
-        <ImageBackground
-          style={styles.rect}
-          imageStyle={styles.rect_imageStyle}
-          source={require("../assets/Gradient_iqNmACq.png")}
-        >
+      <View >
+        
           <View style={styles.logoColumn}>
             <View style={styles.logo}>
               <View style={styles.endWrapperFiller}></View>
               <View style={styles.text3Column}>
-                <Text style={styles.text3}>Testing</Text>
+                <Text style={styles.text3}>QR Scanner</Text>
                 <View style={styles.rect7}></View>
               </View>
             </View>
@@ -156,7 +152,7 @@ function Login(props) {
             <View style={styles.button2Filler}></View>
             <Text style={styles.needHelp}>Need Help?</Text>
           </View>
-        </ImageBackground>
+        
       </View>
     </View>
   );
@@ -165,15 +161,10 @@ function Login(props) {
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    backgroundColor: "rgb(255,255,255)",
+    backgroundColor: "black",
     
   },
-  background: {
-    flex: 1
-  },
-  rect: {
-    flex: 1
-  },
+  
   rect_imageStyle: {},
   logo: {
     bottom: 100
@@ -183,7 +174,7 @@ const styles = StyleSheet.create({
   },
   text3: {
     color: "rgba(255,255,255,1)",
-    fontSize: 96,
+    fontSize: 60,
    
   },
   rect7: {
